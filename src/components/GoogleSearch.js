@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useThemeContext } from '../themeContext'; // Adjust the path as necessary
+import { useThemeContext } from '../themeContext';
 import { Button, Paper, Typography, Grid, TextField, List, ListItem, Alert } from '@mui/material';
 import googleLogo from '../googleLogo.png';
 
