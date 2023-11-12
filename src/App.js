@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import BankUsers from './components/BankUsers';
+import GoogleSearch from './components/GoogleSearch';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Header />
+      </div>
+      <div style={{ paddingBottom: '80px' }}>
+        <Routes>
+          <Route path="/sde" element={<BankUsers />} />
+          <Route path="/xss" element={<GoogleSearch />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
