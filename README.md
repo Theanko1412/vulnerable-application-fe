@@ -8,7 +8,7 @@ Create .env file in root directory with following content:
 ```bash
 REACT_APP_BACKEND_URL="http://localhost:8080/api/v1"
 ```
-By default spring backend will run on port 8080 with context path /api/v1.
+By default [spring backend](https://github.com/Theanko1412/vulnerable-application-be?tab=readme-ov-file#usage) will run on port 8080 with context path /api/v1.
 
 Install dependencies:
 ```bash
